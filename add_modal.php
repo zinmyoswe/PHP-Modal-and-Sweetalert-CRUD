@@ -10,7 +10,7 @@
       </div>
       <div class="modal-body">
 				<div class="container-fluid">
-				<form method="POST" action="addnew.php">
+				<form method="POST" action="">
 					<div class="row">
 						<div class="col-lg-2">
 							<label class="control-label" style="position:relative; top:7px;">Firstname:</label>
@@ -41,7 +41,7 @@
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</a>
+                    <button type="submit" name="add" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</a>
 				</form>
                 </div>
 				

@@ -43,8 +43,10 @@
 					$erow=mysqli_fetch_array($edit);
 				?>
 				<div class="container-fluid">
-				<form method="POST" action="edit.php?id=<?php echo $erow['userid']; ?>">
+				<form method="POST" action="">
 					<div class="row">
+
+						<input type="hidden" name="id" value="<?php echo $erow['userid']; ?>">
 						<div class="col-lg-2">
 							<label style="position:relative; top:7px;">Firstname:</label>
 						</div>
@@ -74,7 +76,7 @@
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-check"></span> Save</button>
+                    <button type="submit" name="update" class="btn btn-warning"><span class="glyphicon glyphicon-check"></span> Save</button>
                 </div>
 				</form>
             </div>
